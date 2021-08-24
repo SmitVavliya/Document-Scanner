@@ -15,9 +15,7 @@ import Share from 'react-native-share';
 import ImagePicker from 'react-native-image-crop-picker';
 import RNGeniusScan from '@thegrizzlylabs/react-native-genius-scan';
 import {navigate} from '../navigationRef';
-RNGeniusScan.setLicenceKey(
-  '533c500657560901045d035439525a0e4a0a5f0553536e4b07524105524a6f015407545b0a060e0057',
-);
+RNGeniusScan.setLicenceKey('');
 
 const CameraScreen = () => {
   const onlyFileName = url => {
@@ -204,21 +202,3 @@ const styles = StyleSheet.create({
 });
 
 export default CameraScreen;
-
-// const res = await RNPdfToImage.convert(
-//   'file:////storage/emulated/0/CamScanner-Pro-India/Documents/1571043876303_DE_CONTINUOUS ASSESSMENT CARD_FORMAT_1.pdf',
-// );
-// console.log(res);
-// console.log(RNFS.CachesDirectoryPath);
-// await RNFS.mkdir(RNFS.ExternalDirectoryPath + '/Pdf-to-Image/');
-
-// for (let file of res.outputFiles) {
-//   const destpath =
-//     RNFS.ExternalDirectoryPath +
-//     '/Pdf-to-Image/' +
-//     fileNameWithExtension(file);
-//   const srcpath =
-//     RNFS.CachesDirectoryPath + '/' + fileNameWithExtension(file);
-
-//   await RNFS.moveFile(srcpath, destpath);
-// }
